@@ -1,15 +1,14 @@
 import java.sql.Date;
 
 public class Product {
-
     private int id;
     private String name;
     private int price;
     private Date delivery_date;
-    private int id_manufacturer;
-    private int quantity;
+    private int manufacturer_id;
+    private String quantity;
     private int manufacturer_price;
-    private String uunit_of_measurement;
+    private String unit_of_measurement;
     private int provider_id;
 
     public int getId() {
@@ -44,19 +43,19 @@ public class Product {
         this.delivery_date = delivery_date;
     }
 
-    public int getId_manufacturer() {
-        return id_manufacturer;
+    public int getManufacturer_id() {
+        return manufacturer_id;
     }
 
-    public void setId_manufacturer(int id_manufacturer) {
-        this.id_manufacturer = id_manufacturer;
+    public void setManufacturer_id(int manufacturer_id) {
+        this.manufacturer_id = manufacturer_id;
     }
 
-    public int getQuantity() {
+    public String getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(int quantity) {
+    public void setQuantity(String quantity) {
         this.quantity = quantity;
     }
 
@@ -68,12 +67,12 @@ public class Product {
         this.manufacturer_price = manufacturer_price;
     }
 
-    public String getUunit_of_measurement() {
-        return uunit_of_measurement;
+    public String getUnit_of_measurement() {
+        return unit_of_measurement;
     }
 
-    public void setUunit_of_measurement(String uunit_of_measurement) {
-        this.uunit_of_measurement = uunit_of_measurement;
+    public void setUnit_of_measurement(String unit_of_measurement) {
+        this.unit_of_measurement = unit_of_measurement;
     }
 
     public int getProvider_id() {

@@ -12,9 +12,9 @@ public class Main extends Application {
     }
 
     @Override
-    public void start(Stage stage) {
+    public void start(Stage primaryStage) {
         FXMLLoader loader=new FXMLLoader();
-        loader.setLocation(getClass().getResource(Const.PRODUCT_TABLE_FXML));
+        loader.setLocation(getClass().getResource(FXMLConst.MAIN_MENU_FXML));
 
         try {
             loader.load();
@@ -23,7 +23,7 @@ public class Main extends Application {
         }
 
         Parent root=loader.getRoot();
-        stage = new Stage();
+        Stage stage=new Stage();
         stage.setScene(new Scene(root));
         stage.show();
     }

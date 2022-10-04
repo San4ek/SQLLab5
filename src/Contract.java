@@ -6,6 +6,15 @@ public class Contract {
     private int id_manufacturer;
     private Date date;
     private int id_provider;
+    private String activity;
+
+    public String getActivity() {
+        return activity;
+    }
+
+    public void setActivity(String active) {
+        this.activity = active;
+    }
 
     public int getId() {
         return id;
